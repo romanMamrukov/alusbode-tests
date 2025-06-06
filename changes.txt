@@ -1,0 +1,24 @@
+ADD
+1. Sticky nav menu with small logo and name - Done
+2. Working hours - Done
+3. Nav menu section for drink | food to scroll to and open dedicated menu list - Done
+4. Instead of copyright 2025 add "Anno 2015" - Done
+5. Add page cache for images and elements
+6. Slow loading for page (Background, Text, Imgs, Animations)
+7. Comments for easy navigation for editing ( Person + for Owner)
+8. Account for owner to pass domain name responsability + payments
+9. Github account + permissions to commit changes
+
+REMOVE
+1. remove scroll behind menu overlay - Done
+2. Prices for drinks - Done
+3. Facebook icon pixel (link decoration) - Done
+4. Navigaation in the footer - Done
+5. Pixelated side for bar logo
+6. Cuts in menu section between menu header, menu center, menu footer
+
+CHANGE
+1. Drinking warning smaller Text - Done
+2. Image download size
+3. Webpage file struction + path
+4. HTML + CSS + JS classes and tags naming

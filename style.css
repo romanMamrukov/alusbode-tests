@@ -345,6 +345,14 @@ section {
 
 @media (max-width: 768px) {
 
+    body {
+        background-size: auto;
+    }
+
+    .nav-overlay {
+        background-size: auto;
+    }
+
     .menu-main {
         width: 100%;
         display: block;

@@ -10,7 +10,7 @@
 body {
     font-family: 'EB Garamond', serif;
     letter-spacing: 0.5px;
-    background: url('assets/desktop/logo/background_wood2@3x.webp') no-repeat center center fixed;
+    background: url('assets/desktop/logo/background_wood.webp') no-repeat center center fixed;
     background-size: cover;
     color: #000;
     min-height: 100vh;
@@ -40,7 +40,7 @@ body {
 .box-opac {
     text-align: center;
     padding: 15px;
-    background: url('assets/desktop/logo/background_wood@1x.webp');
+    background: url('assets/desktop/logo/background_wood.webp');
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
@@ -108,7 +108,7 @@ body {
     z-index: 2000;
     top: 0;
     left: 0;
-    background: url('assets/desktop/logo/background_wood2@3x.webp') no-repeat center center fixed;
+    background: url('assets/desktop/logo/background_wood.webp') no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
     transition: 0.5s;

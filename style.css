@@ -346,11 +346,13 @@ section {
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
+        background-size: auto;
     }
     
     .nav-overlay {
         background-attachment: scroll;
     }
+
     .menu-main {
         width: 100%;
         display: block;

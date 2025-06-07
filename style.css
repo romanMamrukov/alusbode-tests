@@ -103,6 +103,12 @@ body {
     transition: font-size 0.3s ease-in-out;
 }
 
+.nav-title {
+    font-size: 2rem;
+    color: #000;
+    text-shadow: 2px 2px 4px #444;
+}
+
 /* ==== SHRINK ON SCROLL ==== */
 .header.shrink .box-opac {
     padding: 5px 10px;

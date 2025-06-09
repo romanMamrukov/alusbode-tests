@@ -18,6 +18,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
+
 .background-image {
     position: fixed;
     top: 0;
@@ -370,7 +371,7 @@ section {
     body {
         background-attachment: scroll;
     }
-    
+
     .nav-overlay {
         background-attachment: scroll;
     }

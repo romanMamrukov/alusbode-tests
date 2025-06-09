@@ -113,7 +113,7 @@
 
     body {
       margin: 0;
-      padding: 0;
+      padding-top: 250px;
       overflow-x: hidden;
       font-family: 'EB Garamond', serif;
       letter-spacing: 0.5px;
@@ -134,9 +134,24 @@
       pointer-events: none;
     }
 
-    body {
-      padding-top: 250px;
-      /* Adjust based on header height */
+    .content {
+      position: relative;
+      z-index: 1;
+      /* Your content styles */
+    }
+
+    a {
+      text-decoration: none !important;
+    }
+
+    /* ==== HEADER STYLING ==== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
     }
 
     .box-opac {
@@ -174,6 +189,11 @@
       filter: brightness(1.2);
     }
 
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+
     .header-logo {
       width: 150px;
       height: auto;
@@ -194,9 +214,81 @@
       text-shadow: 2px 2px 4px #444;
     }
 
-    .logo {
-      width: 150px;
-      height: auto;
+    /* ==== SHRINK ON SCROLL ==== */
+    .header.shrink .box-opac {
+      padding: 5px 10px;
+    }
+
+    .header.shrink .header-logo {
+      width: 50px;
+    }
+
+    .header.shrink .header-title {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    /* ==== CURTAIN NAV MENU ==== */
+    .nav-overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      left: 0;
+      background: url('assets/desktop/logo/background_wood_x3.webp') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      transition: 0.5s;
+      opacity: 0.95;
+    }
+
+    .overlay-content {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .nav-overlay a {
+      padding: 8px;
+      font-size: 36px;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .nav-overlay a:hover,
+    .nav-overlay a:focus {
+      text-shadow: 2px 2px 4px #444;
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    .nav-overlay .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 60px;
+      z-index: 2;
+    }
+
+    .closebtn:hover {
+      text-shadow: 2px 2px 4px #444;
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    /* ==== MOBILE NAV FIX ==== */
+    @media screen and (max-height: 450px) {
+      .nav-overlay a {
+        font-size: 20px;
+      }
+
+      .nav-overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
     }
   </style>
   <!-- Load full stylesheet later -->

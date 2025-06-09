@@ -30,8 +30,6 @@
     onload="this.rel='stylesheet'" />
   <!-- Preload background img -->
   <link rel="preload" as="image" href="assets/desktop/logo/background_wood_x3.webp" fetchpriority="high">
-  <!-- Preload logo img -->
-   <link rel="preload" as="image" href="assets/desktop/logo/logo@3x.webp" fetchpriority="high">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -195,11 +193,18 @@
       color: #000;
       text-shadow: 2px 2px 4px #444;
     }
+
+    .logo {
+      width: 150px;
+      height: auto;
+    }
   </style>
   <!-- Load full stylesheet later -->
   <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="style.css"></noscript>
-  
+  <noscript>
+    <link rel="stylesheet" href="style.css">
+  </noscript>
+
   <script src="mains.js" defer></script>
 </head>
 
@@ -248,17 +253,17 @@
           Piektdiena: 11:00–22:00
         </p>
         <div class="carousel-container" role="region" aria-label="Image carousel">
-          <img src="assets/desktop/carousel/1@3x.webp" class="carousel-image active" alt="Slide 1">
-          <img src="assets/desktop/carousel/2@3x.webp" class="carousel-image" alt="Slide 2">
-          <img src="assets/desktop/carousel/23@3x.webp" class="carousel-image" alt="Slide 3">
-          <img src="assets/desktop/carousel/123@3x.webp" class="carousel-image" alt="Slide 4">
-          <img src="assets/desktop/carousel/4@3x.webp" class="carousel-image" alt="Slide 5">
-          <img src="assets/desktop/carousel/5@3x.webp" class="carousel-image" alt="Slide 6">
-          <img src="assets/desktop/carousel/6@3x.webp" class="carousel-image" alt="Slide 7">
-          <img src="assets/desktop/carousel/7@3x.webp" class="carousel-image" alt="Slide 8">
-          <img src="assets/desktop/carousel/8@3x.webp" class="carousel-image" alt="Slide 9">
-          <img src="assets/desktop/carousel/9@3x.webp" class="carousel-image" alt="Slide 10">
-          <img src="assets/desktop/carousel/10@3x.webp" class="carousel-image" alt="Slide 11">
+          <img src="assets/desktop/carousel/1@3x.webp" class="carousel-image active" loading="lazy" alt="Slide 1">
+          <img src="assets/desktop/carousel/2@3x.webp" class="carousel-image" loading="lazy" alt="Slide 2">
+          <img src="assets/desktop/carousel/23@3x.webp" class="carousel-image" loading="lazy" alt="Slide 3">
+          <img src="assets/desktop/carousel/123@3x.webp" class="carousel-image" loading="lazy" alt="Slide 4">
+          <img src="assets/desktop/carousel/4@3x.webp" class="carousel-image" loading="lazy" alt="Slide 5">
+          <img src="assets/desktop/carousel/5@3x.webp" class="carousel-image" loading="lazy" alt="Slide 6">
+          <img src="assets/desktop/carousel/6@3x.webp" class="carousel-image" loading="lazy" alt="Slide 7">
+          <img src="assets/desktop/carousel/7@3x.webp" class="carousel-image" loading="lazy" alt="Slide 8">
+          <img src="assets/desktop/carousel/8@3x.webp" class="carousel-image" loading="lazy" alt="Slide 9">
+          <img src="assets/desktop/carousel/9@3x.webp" class="carousel-image" loading="lazy" alt="Slide 10">
+          <img src="assets/desktop/carousel/10@3x.webp" class="carousel-image" loading="lazy" alt="Slide 11">
         </div>
       </section>
 

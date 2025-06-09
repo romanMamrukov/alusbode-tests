@@ -25,13 +25,13 @@
   -->
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css" />
-  <script src="mains.js" defer></script>
   <link rel="canonical" href="https://www.alusbode.lv/" />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" as="style"
     onload="this.rel='stylesheet'" />
   <!-- Preload background img -->
   <link rel="preload" as="image" href="assets/desktop/logo/background_wood_x3.webp" fetchpriority="high">
+  <!-- Preload logo img -->
+   <link rel="preload" as="image" href="assets/desktop/logo/logo@3x.webp" fetchpriority="high">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -196,7 +196,11 @@
       text-shadow: 2px 2px 4px #444;
     }
   </style>
-
+  <!-- Load full stylesheet later -->
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  
+  <script src="mains.js" defer></script>
 </head>
 
 <body>
@@ -524,7 +528,6 @@
       </div>
     </footer>
   </div>
-  <script src="mains.js" defer></script>
 </body>
 
 </html>
